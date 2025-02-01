@@ -19,21 +19,21 @@ This is an application that carries out some data processing tasks.
 
 - Clone the repo
 
-``bash
-git clone https://github.com/yourusername/yourrepository.git
-``
+```bash 
+git clone https://github.com/Nancy9ice/sample-project.git
+```
 
 - Build the docker application
 
-``bash
+```bash
 docker build -t simple-app
-``
+```
 
 - Run the docker application
 
-``bash
+```bash
 docker run simple-app
-``
+```
 
 ## Project Background
 
