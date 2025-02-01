@@ -1,4 +1,4 @@
-# Small Application
+# Data Processing Project
 
 This is an application that carries out some data processing tasks.
 
