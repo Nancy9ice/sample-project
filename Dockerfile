@@ -4,11 +4,14 @@ FROM python:3.10-slim
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app
+# Copy only requirements.txt first to leverage caching
+COPY requirements.txt /app/
 
 # Install dependencies
 RUN pip install -r requirements.txt
 
-#  Run the application when the container starts
+# Copy the rest of the application code
+COPY . /app
+
+# Run the application when the container starts
 CMD ["python", "main.py"]
